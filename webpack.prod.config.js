@@ -27,12 +27,12 @@ module.exports.plugins.push(
   })
 );
 
-// // export css to a separate file
-// module.exports.module.loaders[1] = {
-//   test: /\.scss$/,
-//   loader: ExtractTextPlugin.extract('css!sass'),
-// };
+// export css to a separate file
+module.exports.module.loaders[1] = {
+  test: /\.scss$/,
+  loader: ExtractTextPlugin.extract('css!sass'),
+};
 
-// module.exports.plugins.push(
-//   new ExtractTextPlugin('../css/main.css')
-// );
+module.exports.plugins.push(
+  new ExtractTextPlugin('../assets/main.css')
+);
