@@ -1,0 +1,60 @@
+input[type=text],
+input[type=date],
+input[type=password],
+{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    .inline-label & {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+label {
+    display: block;
+    .inline-label & {
+        margin-right: 10px;
+        display: inline-block;
+    }
+}
+
+input[type=text],
+input[type=date],
+input[type=password] {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid darken($canvas-background, 5%);
+    color: $secondary-text-color;
+    &:focus {
+        box-shadow: none;
+    }
+    .has-error & {
+        border-color: $color-error;
+    }
+}
+
+.form-field {
+    &.field-half {
+        float: left;
+        box-sizing: border-box;
+        width: 48%;
+        &:last-child {
+            margin-left: 4%;
+        }
+    }
+    .error-container {
+        color: $color-error;
+        font-size: $font-small;
+    }
+    &.check-field {
+        .error-container {
+            margin-left: 23px;
+        }
+    }
+}
+
+.form-row {
+    margin: 10px 0;
+}

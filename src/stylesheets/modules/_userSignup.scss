@@ -1,0 +1,32 @@
+.user-signup {
+    background: $white;
+    border: 1px solid darken($canvas-background, 10%);
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 90%;
+    width: 501px;
+    .form-header {
+        @extend .tcenter;
+        border-bottom: 1px solid darken($canvas-background, 10%);
+        padding: 10px;
+        .title {
+            margin: 0;
+            font-size: $font-large;
+        }
+        .subtitle {
+            margin: 0;
+            font-size: $font-small;
+            color: $secondary-text-color;
+        }
+        .icon {
+            @include circle(50px);
+            background: $primary-color;
+            display: inline-block;
+            font-size: $font-xlarge;
+            color: $white;
+        }
+    }
+    .form-body {
+        padding: 10px;
+    }
+}

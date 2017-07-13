@@ -1,0 +1,14 @@
+@mixin circle($diameter) {
+    @include border-radius($diameter / 2);
+    width: $diameter;
+    height: $diameter;
+    text-align: center;
+    line-height: $diameter;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

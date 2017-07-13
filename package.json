@@ -1,0 +1,61 @@
+{
+  "name": "JCarpioBoilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "index.js",
+  "homepage": "",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "scripts": {
+    "start": "webpack-dev-server -d --inline --hot --history-api-fallback --host localhost --port 8080",
+    "build-dev": "webpack --config webpack.dev.config.js",
+    "build-prod": "webpack -p --config webpack.prod.config.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-3"
+    ],
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
+  },
+  "author": "John Carpio",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "react": "^15.4.1",
+    "react-addons-shallow-compare": "^15.4.2",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-runtime": "^6.20.0",
+    "clean-webpack-plugin": "^0.1.14",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.10.1",
+    "ignore-styles": "^5.0.1",
+    "image-webpack-loader": "^3.2.0",
+    "node-sass": "^4.0.0",
+    "react-addons-test-utils": "^15.4.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "whatwg-fetch": "^2.0.1"
+  }
+}

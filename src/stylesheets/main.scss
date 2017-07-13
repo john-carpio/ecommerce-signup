@@ -1,0 +1,19 @@
+@import 'normalize';
+
+@import 'constants';
+@import 'colors';
+@import 'mixins';
+
+@import 'helpers';
+@import 'layout';
+@import 'forms';
+@import 'buttons';
+@import 'modules';
+
+
+.page-body {
+    background: $canvas-background;
+    color: $primary-text-color;
+    font-size: $font-medium;
+    font-family: 'Signika', sans-serif;
+}

@@ -1,0 +1,21 @@
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-block {
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-secondary {
+    border: none;
+    background: $secondary-color;
+    color: $white;
+}
+
+.btn-large {
+    padding: 10px;
+}
