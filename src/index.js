@@ -3,8 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import UserSignup from './components/UserSignup';
 
-import './stylesheets/main.scss';
-import 'react-datepicker/dist/react-datepicker.css';
+import "./stylesheets/main.scss";
 
 ReactDOM.render(
     <section className='main'>

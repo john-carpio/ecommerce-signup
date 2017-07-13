@@ -35,7 +35,7 @@ module.exports = {
       {
         // https://github.com/jtangelder/sass-loader
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass'],
+        loaders: ['style', 'css', 'sass']
       },
       {
         test: /\.css$/,
@@ -46,14 +46,6 @@ module.exports = {
         loaders: [
             'file?name=[hash].[ext]'
         ]
-      },
-      {
-          test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          loader: "url-loader?limit=10000&mimetype=application/font-woff"
-      },
-      {
-          test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          loader: 'file?name=[hash].[ext]'
       }
     ],
   },
@@ -61,13 +53,6 @@ module.exports = {
     contentBase: __dirname + '/build',
     historyApiFallback: true,
     proxy: {
-      /* proxies for api calls while on dev server
-      example:
-      "/m/*": {
-        target: "https://mswtest.lotus.local:8443",
-        secure: false
-      },
-      */
     }
   },
   plugins: [
