@@ -16,7 +16,7 @@ class TextField extends React.Component {
     _handleInputBlur(e) {
         const { value } = e.target;
         const label = this.props.fieldLabel || 'This field';
-        const hasValue = value || value.trim().length;
+        const hasValue = !!value && value.trim().length;
         if(this.props.required && !hasValue) {
             this.setState({
                 showError: true,
@@ -28,7 +28,7 @@ class TextField extends React.Component {
     _handleInputChange(e) {
         const { value } = e.target;
         let { showError, errorMsg } = this.state;
-        const hasValue = value || value.trim().length;
+        const hasValue = !!value || !!value.trim().length;
         if(this.props.required && hasValue && showError) {
             showError = false,
             errorMsg = null
